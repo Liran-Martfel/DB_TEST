@@ -33,7 +33,6 @@ for e in employees:
 
 #question
 id_employee = int(input("Enter employee ID: "))
-
 if run_query_select(f'select * from employees where id = ?;',(id_employee,)):
     print("Employee already exists!")
 else:
